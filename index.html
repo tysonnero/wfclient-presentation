@@ -108,7 +108,7 @@
 <section>
     <section>
         <h2>WFClient File Structure (App)</h2>
-        <img src="assets\app-structure.png" alt=""/>
+        <img src="assets\app-structure.png" alt="" class="margin-right"/>
         <ul>
             <li class="fragment">css - Vendor CSS files</li>
             <li class="fragment">images - Global image directory</li>
@@ -119,8 +119,37 @@
         </ul>
     </section>
     <section>
-        <h2>Basement Level 1</h2>
-        <p>Press down or up to navigate.</p>
+        <h2>Application Modules (Not Angular)</h2>
+        <p>The application functionality is broken out separate modules.</p>
+        <p>Why?</p>
+        <ul>
+            <li class="fragment">Code separation</li>
+            <li class="fragment">Enable/disable features and functionality</li>
+        </ul>
+        <p>What?</p>
+        <ul>
+            <li class="fragment">Core - All core functionality. Always enabled.</li>
+            <li class="fragment">Macys - Macy's specific functionality.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>(Angular) Modules</h2>
+        <p>Modules are used to internally structure the application... like Namespaces in .NET.</p>
+        <p>A module is defined at the root of the application as "wfclient"</p>
+    <section>
+        <h2>Control, Serve and Direct</h2>
+        <p>AngularJS gives us internal modules for building our app.</p>
+        <ul>
+            <li class="fragment">Controllers - Business logic</li>
+            <li class="fragment">Services - Server communication</li>
+            <li class="fragment">Directives - DOM manipulation and events</li>
+            <li class="fragment">Everything else - Filters, Interceptors, etc.</li>
+        </ul>
+        <p>Under each application module (not Angular): </p>
+        <ul>
+            <li>Code is separated by the above types</li>
+            <li>Angular modules are defined for each type</li>
+        </ul>
     </section>
     <section>
         <h2>Basement Level 2</h2>
