@@ -4,8 +4,13 @@ section[data-background-cover] {
     -moz-border-radius: 20px;
     -o-border-radius: 20px;
     border-radius: 20px;
+    padding: 30px !important;
 }
 
 .margin-right {
     margin-right: 20px !important;
+}
+
+.margin-bottom {
+    margin-bottom: 20px !important;
 }
